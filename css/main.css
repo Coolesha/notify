@@ -321,6 +321,222 @@ input:focus:invalid {
     border-radius: 8px;
 }
 
+/* ======================================
+    4. testimonials section
+   =================================== */
+
+.testimonials {
+    width: 1600px;
+    height: 465px;
+    text-align: center;
+}
+
+.testimonials_container {
+    width: 1200px;
+    height: 465px;
+    display: block;
+    margin: 58px auto;
+}
+
+.testimonials_container div {
+    margin: 0 auto;
+}
+
+.testimonials_container div p {
+    width: 888px;
+    margin: auto;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.testimonials_container div p:nth-child(2) {
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.testimonials_container div .name {
+    margin: 25px auto 50px auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+.slider {
+    width: 300px;
+}
+
+.slider div img {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.testimonials_container div .cheers {
+    margin: 60px auto 25px auto;
+}
+
+/* 4.1 social icons
+===================================*/
+
+.social_icons {
+    position: relative;
+}
+
+.flip-container {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+.flip-container:hover .twitter,
+.flip-container:hover .facebook,
+.flip-container:hover .pinterest,
+.flip-container:hover .google,
+.flip-container:hover .linkedin,
+.flip-container:hover .twitter,
+.flip-container:hover .youtube {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.twitter,
+.facebook,
+.pinterest,
+.google,
+.linkedin,
+.youtube {
+    position: relative;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.twitter_front,
+.twitter_back,
+.facebook_front,
+.facebook_back,
+.pinterest_front,
+.pinterest_back,
+.google_front,
+.google_back,
+.linkedin_front,
+.linkedin_back,
+.youtube_front,
+.youtube_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+}
+
+.twitter_front,
+.twitter_back {
+    background: url("../img/twitter.png") center no-repeat;
+}
+
+.facebook_front,
+.facebook_back {
+    background: url("../img/facebook.png") center no-repeat;
+}
+
+.pinterest_front,
+.pinterest_back {
+    background: url("../img/pinterest.png") center no-repeat;
+}
+
+.google_front,
+.google_back {
+    background: url("../img/google%20+.png") center no-repeat;
+}
+
+.linkedin_front,
+.linkedin_back {
+    background: url("../img/linkedin.png") center no-repeat;
+}
+
+.youtube_front,
+.youtube_back {
+    background: url("../img/youtube.png") center no-repeat;
+}
+
+.twitter_position {
+    position: absolute;
+    top: 25px;
+    left: 463px;
+}
+
+.facebook_position {
+    position: absolute;
+    top: 25px;
+    left: 513px;
+}
+
+.pinterest_position {
+    position: absolute;
+    top: 25px;
+    left: 563px;
+}
+
+.google_position {
+    position: absolute;
+    top: 25px;
+    left: 613px;
+}
+
+.linkedin_position {
+    position: absolute;
+    top: 25px;
+    left: 663px;
+}
+
+.youtube_position {
+    position: absolute;
+    top: 25px;
+    left: 713px;
+}
+
+.twitter_front,
+.facebook_front,
+.pinterest_front,
+.google_front,
+.linkedin_front,
+.youtube_front {
+    background-color: #c5c5c5;
+    z-index: 2;
+}
+
+.twitter_back,
+.facebook_back,
+.pinterest_back,
+.google_back,
+.linkedin_back,
+.youtube_back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: #d4213d;
+}
 
 
 
