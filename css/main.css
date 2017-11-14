@@ -206,6 +206,59 @@ textarea {
     left: 464px;
 }
 
+/* ======================================
+    2. features section
+   =================================== */
+
+.features {
+    width: 1600px;
+    height: 335px;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.features .container div {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.feature_one {
+    margin-left: -21px;
+}
+
+.feature_two {
+    margin: 0 60px;
+}
+
+.features img {
+    display: block;
+    margin: 0 auto;
+    width: 98px;
+    height: 98px;
+}
+
+.features h2 {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+    ;
+}
+
+.features p {
+    margin-top: 18px;
+}
+
+
 
 
 
