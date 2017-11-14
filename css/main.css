@@ -538,6 +538,34 @@ input:focus:invalid {
     background-color: #d4213d;
 }
 
+/* ======================================
+    5. footer
+   =================================== */
+
+.footer {
+    width: 1600px;
+    height: 130px;
+    background: #e3e3e3;
+}
+
+.footer ul {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li {
+    align-items: stretch;
+    padding: 55px 25px;
+}
+
+.footer ul li a {
+    margin: auto;
+    text-decoration: none;
+}
+
+
 
 
 
