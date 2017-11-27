@@ -10,28 +10,28 @@
     <link href="icon.png" rel="apple-touch-icon"><!-- Place favicon.ico in the root directory -->
     <link href="css/normalize.css" rel="stylesheet"><!-- slick directory -->
     <link href="./slick/slick.css" rel="stylesheet" type="text/css">
-    <link href="./slick/slick-theme.css" rel="stylesheet" type="text/css"><!--<link rel="stylesheet" href="css/main.css"> -->
+    <link href="./slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/animation.css" rel="stylesheet"><!--<link rel="stylesheet" href="css/main.css"> -->
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 </head>
 <body>
-    <div class="topline"></div>
     <header class="header">
-       <div class="wrapper">
-        <h1 >Notify<span>.</span></h1>
-        <h2>A great new solution that is going to change your life</h2>
-           <div class="wrapper__symbols">
-            <div class="symbol symbol--apple">
-                <a href="#"><img alt="apple icon" src="img/apple.png"></a>
-               </div>
-            <div class="symbol symbol--android">
-                <a href="#"><img alt="android icon" src="img/android.png"></a>
-               </div>
-               <div class="symbol symbol--windows">
-                   <a href="#"><img alt="windows icon" src="img/windows.png"></a>
+        <div class="wrapper">
+            <h1>Notify<span>.</span></h1>
+            <h2>A great new solution that is going to change your life.</h2>
+            <div class="wrapper__symbols">
+                <div class="symbol symbol--apple">
+                    <a href="#"><img alt="apple icon" src="img/apple.png"></a>
+                </div>
+                <div class="symbol symbol--android">
+                    <a href="#"><img alt="android icon" src="img/android.png"></a>
+                </div>
+                <div class="symbol symbol--windows">
+                    <a href="#"><img alt="windows icon" src="img/windows.png"></a>
+                </div>
             </div>
         </div>
-       </div>
     </header>
     <main>
         <section class="features">
@@ -59,11 +59,11 @@
                     <h2>Get Notified Of Any Updates!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
                     <div>
-                        <input id="email" name="email" placeholder="Email Address" type="email">       <button>Notify</button>
-                    </div>    
+                        <input id="email" name="email" placeholder="Email Address" type="email"> <button>Notify</button>
+                    </div>
                 </div>
                 <div class="vimeo">
-                    <iframe allowfullscreen frameborder="0" height="307" src="https://player.vimeo.com/video/160397656" width="170%"></iframe>
+                    <iframe allowfullscreen frameborder="0" height="307" src="https://player.vimeo.com/video/160397656" width="500"></iframe>
                 </div>
             </div>
         </section>
@@ -102,14 +102,26 @@
                     <h2 class="cheers">Say Hi &amp; Get in Touch</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.</p>
                 </div>
-                <div class="social-icons">
-                    <div class="icon icon--twitter"></div>
-                    <div class="icon icon--facebook"></div>
-                    <div class="icon icon--pinterest"></div>
-                    <div class="icon icon--google"></div>
-                    <div class="icon icon--linkedin"></div>
-                    <div class="icon icon--youtube"></div>
-                </div>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--twitter"></span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--facebook"></span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--pinterest"></span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--google"></span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--linkedin"></span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__item__link" href="#"><span class="icon icon--youtube"></span></a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -142,21 +154,19 @@
         </ul>
     </footer>
     <script src="js/vendor/modernizr-3.5.0.min.js">
-    </script> 
+    </script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript">
-    </script> 
-
+    </script>
     <script charset="utf-8" src="./slick/slick.js" type="text/javascript">
-    </script> 
+    </script>
     <script src="js/plugins.js">
-    </script> 
+    </script>
     <script src="js/main.js">
     </script> <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-     
     <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-    </script> 
+    </script>
     <script async defer src="https://www.google-analytics.com/analytics.js">
     </script>
 </body>

@@ -96,10 +96,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto:400,500');
 @font-face {
     font-family: 'Myriad Pro';
     src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?39966523');
+    src: url('../fonts/fontello.eot?39966523#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?39966523') format('woff'), url('../fonts/fontello.ttf?39966523') format('truetype'), url('../fonts/fontello.svg?39966523#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -110,23 +119,16 @@ textarea {
 }
 
 body {
+    display: block;
     width: 100%;
+    margin: 0 auto;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    display: block;
     line-height: 1.73;
-    margin: 0 auto;
 }
 
 p {
     color: #848484;
-}
-
-.topline {
-    height: 10px;
-    width: 100%;
-    display: block;
-    background-color: #d4213d;
 }
 
 /* ======================================
@@ -136,26 +138,29 @@ p {
 .header {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 610px;
     background-image: url(../img/background_header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-top: 10px solid #d4213d;
 }
+
 .header .wrapper {
-    position: relative;
+    position: absolute;
     top: 200px;
     left: 20.5%;
     display: flex;
     flex-direction: column;
 }
+
 .header .wrapper h1 {
+    margin: 0;
     font-size: 60px;
     font-family: "Gochi Hand", cursive;
     color: rgb(255, 255, 255);
     line-height: 0.333;
     text-align: left;
-    margin: 0;
     font-weight: normal;
 }
 
@@ -165,32 +170,33 @@ p {
 
 .header .wrapper h2 {
     margin: 60px 0 35px 0;
-    text-align: left;
     width: 100%;
     max-width: 389px;
     height: 59px;
     line-height: 1.5;
+    text-align: left;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
-.wrapper__symbols{
+
+.wrapper__symbols {
     position: relative;
     display: flex;
     flex-direction: row;
 }
+
 .symbol {
     position: relative;
     width: 53px;
     height: 53px;
-    margin-right: 1.2%;
+    margin-right: 4%;
     background-color: #030303;
     background-size: 20px 20px;
     border-radius: 50%;
     opacity: 0.502;
 }
-
 
 .symbol img {
     position: absolute;
@@ -216,23 +222,22 @@ p {
 }
 
 .container {
+    display: flex;
+    flex-direction: row;
     margin: auto;
     width: 75%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 .features .container div {
-    width: 30%;
     display: flex;
     flex-direction: column;
-    margin:auto;
+    width: 30%;
+    margin: auto;
 }
 
-
-.features .container div.feature-middle {
- margin: auto 10%;
+.features .container .feature-middle {
+    margin: auto 10%;
 }
 
 .features img {
@@ -247,7 +252,6 @@ p {
     font-size: 22px;
     font-weight: 400;
     line-height: 0.81;
-    ;
 }
 
 .features p {
@@ -265,9 +269,8 @@ p {
 }
 
 .get-notified .subscription {
-    margin: 50px 0;
+    margin: 50px auto;
     max-width: 545px;
-    width: 46%;
 }
 
 .subscription h2 {
@@ -286,9 +289,10 @@ input:focus:invalid {
 .subscription p {
     margin: 10px auto;
 }
+
 .subscription div {
     margin: 20px auto;
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
@@ -313,9 +317,11 @@ input:focus:invalid {
     border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
-.vimeo{
-    margin: auto auto auto 12%;
+
+.vimeo {
     max-width: 500px;
+    max-height: 307px;
+    margin: auto auto auto 12%;
 }
 
 .vimeo iframe {
@@ -333,9 +339,9 @@ input:focus:invalid {
 }
 
 .testimonials-container {
+    display: block;
     width: 75%;
     height: 465px;
-    display: block;
     margin: 58px auto;
 }
 
@@ -377,67 +383,85 @@ input:focus:invalid {
     margin: 48px auto 7px auto;
 }
 
-/* 4.1 social icons 
+/* 4.1 social icons
 ===================================*/
 
-.social-icons {
+.social-links {
     position: relative;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
 }
 
-
-.icon--twitter{
-    background: url("../img/twitter.png") center no-repeat;
+.social-links__item {
+    align-items: stretch;
+    margin: 20px 0.5%;
+    list-style: none;
 }
 
-.icon--facebook{
-    background: url("../img/facebook.png") center no-repeat;
+.social-links__item__link {
+    margin: auto;
+    text-decoration: none;
 }
 
-.icon--pinterest {
-    background: url("../img/pinterest.png") center no-repeat;
+.icon--twitter:before {
+    content: "\E805";
 }
 
-.icon--google{
-    background: url("../img/google%20+.png") center no-repeat;
+.icon--facebook:before {
+    content: "\E801";
 }
 
-.icon--linkedin {
-    background: url("../img/linkedin.png") center no-repeat;
+.icon--pinterest:before {
+    content: "\E800";
 }
 
-.icon--youtube{
-    background: url("../img/youtube.png") center no-repeat;
+.icon--google:before {
+    content: "\E802";
 }
+
+.icon--linkedin:before {
+    content: "\E803";
+}
+
+.icon--youtube:before {
+    content: "\E804";
+}
+
 .testimonials-container .icon {
-  margin: 20px 0.5%;
-  width: 34px;
-  height: 34px;
-  display: inline-block;
-  position: relative;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -moz-transition: 1s;
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  outline: none;
-  border-radius: 50%;
-  background-color: #c5c5c5;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-  background-color: #c5c5c5;
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    font-family: fontello;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 2.15;
+    transition: 1s;
+    outline: none;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    cursor: pointer;
 }
-.icon:hover {
-  background-color: #d4213d;
-  -webkit-transform: rotateY(360deg);
-  -moz-transform: rotateY(360deg);
-  -o-transform: rotateY(360deg);
-  transform: rotateY(360deg);
+
+.social-links__item:hover .icon {
+    background-color: #d4213d;
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
 /* ======================================
@@ -459,28 +483,13 @@ input:focus:invalid {
 
 .footer ul li {
     align-items: stretch;
-    padding: 55px 1.5%;
+    padding: 55px 1.5% 0 1.5%;
 }
 
 .footer ul li a {
     margin: auto;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -514,7 +523,8 @@ input:focus:invalid {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -558,8 +568,10 @@ input:focus:invalid {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -577,9 +589,9 @@ input:focus:invalid {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -594,35 +606,30 @@ input:focus:invalid {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -631,28 +638,23 @@ input:focus:invalid {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
